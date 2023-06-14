@@ -22,8 +22,7 @@ steps:
     goals: 'package'
 - task: Gradle@2
   inputs:
-    gradleWrapperFile: 'gradlew'
-    workingDirectory: 'IdentityService'
+    gradleWrapperFile: 'IdentityService'
     options: '''-Xmx3072m'''
     tasks: 'build'
     publishJUnitResults: true
